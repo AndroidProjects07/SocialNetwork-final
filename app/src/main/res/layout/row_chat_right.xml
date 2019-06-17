@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:orientation="horizontal">
 
         <com.blogspot.atifsoftwares.circularimageview.CircularImageView
@@ -30,14 +31,14 @@
 
         <TextView
             android:id="@+id/messageTxv"
-            android:layout_weight="1"
-            android:textSize="16sp"
-            android:padding="15dp"
-            android:textColor="@color/colorBlack"
-            android:background="@drawable/bg_sender"
-            android:text="His message"
+
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sender"
+            android:padding="15dp"
+            android:text="His message"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
 
     </LinearLayout>
 

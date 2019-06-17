@@ -137,8 +137,13 @@ public class ChatActivity extends AppCompatActivity {
                     recyclerView.postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            recyclerView.smoothScrollToPosition(
-                                    recyclerView.getAdapter().getItemCount());
+                            try {
+                                recyclerView.smoothScrollToPosition(
+                                        recyclerView.getAdapter().getItemCount());
+                            }
+                            catch (Exception ex){
+
+                            }
                         }
                     }, 100);
                 }
@@ -215,8 +220,6 @@ public class ChatActivity extends AppCompatActivity {
 
                 } else {
                     sendMessage(message, imageURL, audioURL);
-                    recyclerView.smoothScrollToPosition(
-                            recyclerView.getAdapter().getItemCount());
                 }
 
                 //reset edit text
@@ -309,7 +312,7 @@ public class ChatActivity extends AppCompatActivity {
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("sender", myUid);
         hashMap.put("receiver", hisUid);
-        hashMap.put("message", message);
+        hashMap.put("message", message+"  ");
         hashMap.put("timestamp", timestamp);
         hashMap.put("isSeen", false);
         hashMap.put("imageURL",imageURL);
@@ -363,7 +366,7 @@ public class ChatActivity extends AppCompatActivity {
 
                                 @Override
                                 public void onFailure(Call<MyResponse> call, Throwable t) {
-
+                                    Toast.makeText(ChatActivity.this, "Fail", Toast.LENGTH_SHORT).show();
                                 }
                             });
                 }

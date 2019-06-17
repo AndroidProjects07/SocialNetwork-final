@@ -151,7 +151,7 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
                             ChatActivity.mediaPlayer=new MediaPlayer();
                             ChatActivity.mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
                             isPlay = false;
-                            if (pos!=-1){
+                            if (pos!=-1&&pos!=i){
                                 stop=1;
                                 notifyItemChanged(pos);
                             }

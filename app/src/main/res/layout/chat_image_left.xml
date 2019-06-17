@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profileIv"
+        android:src="@drawable/ic_default"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <ImageView
+        android:id="@+id/imgChat"
+        android:layout_toRightOf="@+id/profileIv"
+        android:textColor="#000"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/timeTxv"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgChat"
+        android:text="02/03/2019 05:29PM"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/imgChat"
+        android:id="@+id/isSeenTxv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

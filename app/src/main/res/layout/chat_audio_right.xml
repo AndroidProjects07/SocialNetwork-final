@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:src="@drawable/ic_default"
+            android:visibility="gone"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <RelativeLayout
+            android:id="@+id/layout_audio"
+            android:background="@drawable/bg_sender"
+            android:paddingRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/imgPause"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_pause" />
+            <TextView
+                android:paddingTop="15dp"
+                android:textColor="#000"
+                android:layout_toRightOf="@+id/imgPlay"
+                android:id="@+id/txtStatus"
+                android:text="Start Play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/timeTxv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02/03/2019 05:29PM"
+            android:textColor="@color/colorBlack"
+            android:layout_toLeftOf="@+id/layout_audio"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/layout_audio"
+            android:text="Seen"
+            android:id="@+id/isSeenTxv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

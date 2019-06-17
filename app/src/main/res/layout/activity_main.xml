@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_android_logo_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- button register-->
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register_btn"
+        android:background="#445EE0"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        android:layout_above="@id/login_btn"/>
+    <!-- button login-->
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#445EE0"
+        android:textColor="#fff"
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/login_btn"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp" />
+</RelativeLayout>

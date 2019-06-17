@@ -161,7 +161,6 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
             public boolean onMenuItemClick(MenuItem item) {
                 int id = item.getItemId();
                 if(id==0){
-                    Toast.makeText(context, pId, Toast.LENGTH_SHORT).show();
                     beginDelete(pId, pImage);
                 }
                 return false;

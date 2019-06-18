@@ -29,7 +29,7 @@ import group7_laptrinhdidong.com.socialnetwork.ChatActivity;
 import group7_laptrinhdidong.com.socialnetwork.R;
 import group7_laptrinhdidong.com.socialnetwork.models.ModelChat;
 
-public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
+public class AdapterChat extends  RecyclerView.Adapter<AdapterChat.MyHolder>{
 
     private static final int MSG_TYPE_LEFT =0;
     private static final int MSG_TYPE_RIGHT =1;
